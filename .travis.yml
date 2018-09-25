@@ -1,0 +1,15 @@
+language: android
+android:
+  components:
+
+    - build-tools-26.0.2
+    - android-26
+
+    # Additional components
+    - extra-google-m2repository
+    - extra-android-m2repository
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+    - sys-img-armeabi-v7a-android-26
+    - sys-img-armeabi-v7a-android-17
