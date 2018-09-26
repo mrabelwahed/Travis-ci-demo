@@ -9,14 +9,16 @@ android:
     - android-26
     - extra-android-m2repository
 
+ before_install:
+     - chmod +x gradlew
+
  before_script:
-    - chmod +x gradlew
     - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
     - emulator -avd test -no-skin -no-audio -no-window &
     - android-wait-for-emulator
     - adb shell input keyevent 82 &
 
-    script:
+ script:
     - ./gradlew clean build connectedCheck  --stacktrace
 
 
