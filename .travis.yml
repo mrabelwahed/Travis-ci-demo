@@ -1,6 +1,11 @@
-sudo: faslse
+
 language: android
 jdk: oraclejdk8
+sudo: false
+
+notifications:
+    email:
+        - mahmoud.ramadan@eventtus.com #Add your email address
 android:
  components:
     - platform-tools
