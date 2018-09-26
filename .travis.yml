@@ -1,4 +1,4 @@
-sudo: required
+sudo: faslse
 language: android
 jdk: oraclejdk8
 android:
