@@ -24,7 +24,7 @@ android:
     - adb shell input keyevent 82 &
 
  script:
-    - ./gradlew clean build
+    - ./gradlew test
 
 
 before_cache:
